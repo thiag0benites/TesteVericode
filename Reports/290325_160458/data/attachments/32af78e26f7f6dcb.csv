@@ -1,0 +1,3 @@
+﻿Campo,Valor,Aviso
+Engine Performance,xxx,Must be a number between 1 and 1000
+List Price,200,Must be a number between 500 and 100000

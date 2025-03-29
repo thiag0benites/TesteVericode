@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "5bvaNKVuxFs=",
+  "dgSpecHash": "AqUnaIzabvo=",
   "success": true,
   "projectFilePath": "C:\\TesteVericode\\TesteVericode.csproj",
   "expectedPackageFiles": [
@@ -27,6 +27,7 @@
     "C:\\Users\\server-thiago\\.nuget\\packages\\reqnroll\\2.2.1\\reqnroll.2.2.1.nupkg.sha512",
     "C:\\Users\\server-thiago\\.nuget\\packages\\reqnroll.nunit\\2.2.1\\reqnroll.nunit.2.2.1.nupkg.sha512",
     "C:\\Users\\server-thiago\\.nuget\\packages\\reqnroll.tools.msbuild.generation\\2.2.1\\reqnroll.tools.msbuild.generation.2.2.1.nupkg.sha512",
+    "C:\\Users\\server-thiago\\.nuget\\packages\\selenium.support\\4.30.0\\selenium.support.4.30.0.nupkg.sha512",
     "C:\\Users\\server-thiago\\.nuget\\packages\\selenium.webdriver\\4.30.0\\selenium.webdriver.4.30.0.nupkg.sha512",
     "C:\\Users\\server-thiago\\.nuget\\packages\\sharpziplib\\1.4.2\\sharpziplib.1.4.2.nupkg.sha512",
     "C:\\Users\\server-thiago\\.nuget\\packages\\specflow.internal.json\\1.0.8\\specflow.internal.json.1.0.8.nupkg.sha512",

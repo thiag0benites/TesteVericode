@@ -109,11 +109,6 @@ C:\TesteVericode\TesteVericode\obj\Debug\net8.0\refint\TesteVericode.dll
 C:\TesteVericode\TesteVericode\obj\Debug\net8.0\TesteVericode.pdb
 C:\TesteVericode\TesteVericode\obj\Debug\net8.0\TesteVericode.genruntimeconfig.cache
 C:\TesteVericode\TesteVericode\obj\Debug\net8.0\ref\TesteVericode.dll
-C:\TesteVericode\obj\Debug\net8.0\TesteVericode.csproj.AssemblyReference.cache
-C:\TesteVericode\obj\Debug\net8.0\TesteVericode.GeneratedMSBuildEditorConfig.editorconfig
-C:\TesteVericode\obj\Debug\net8.0\TesteVericode.AssemblyInfoInputs.cache
-C:\TesteVericode\obj\Debug\net8.0\TesteVericode.AssemblyInfo.cs
-C:\TesteVericode\obj\Debug\net8.0\TesteVericode.csproj.CoreCompileInputs.cache
 C:\TesteVericode\bin\Debug\net8.0\testhost.dll
 C:\TesteVericode\bin\Debug\net8.0\Reqnroll.NUnit.ReqnrollPlugin.dll
 C:\TesteVericode\bin\Debug\net8.0\testhost.exe
@@ -150,6 +145,7 @@ C:\TesteVericode\bin\Debug\net8.0\MimeTypesMap.dll
 C:\TesteVericode\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\TesteVericode\bin\Debug\net8.0\nunit.framework.dll
 C:\TesteVericode\bin\Debug\net8.0\Reqnroll.dll
+C:\TesteVericode\bin\Debug\net8.0\WebDriver.Support.dll
 C:\TesteVericode\bin\Debug\net8.0\WebDriver.dll
 C:\TesteVericode\bin\Debug\net8.0\ICSharpCode.SharpZipLib.dll
 C:\TesteVericode\bin\Debug\net8.0\SpecFlow.Internal.Json.dll
@@ -219,6 +215,12 @@ C:\TesteVericode\bin\Debug\net8.0\zh-Hans\Microsoft.VisualStudio.TestPlatform.Co
 C:\TesteVericode\bin\Debug\net8.0\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 C:\TesteVericode\bin\Debug\net8.0\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 C:\TesteVericode\bin\Debug\net8.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:\TesteVericode\obj\Debug\net8.0\TesteVericode.csproj.AssemblyReference.cache
+C:\TesteVericode\obj\Debug\net8.0\TesteVericode.GeneratedMSBuildEditorConfig.editorconfig
+C:\TesteVericode\obj\Debug\net8.0\TesteVericode.AssemblyInfoInputs.cache
+C:\TesteVericode\obj\Debug\net8.0\TesteVericode.AssemblyInfo.cs
+C:\TesteVericode\obj\Debug\net8.0\TesteVericode.csproj.CoreCompileInputs.cache
+C:\TesteVericode\obj\Debug\net8.0\TesteVericode.sourcelink.json
 C:\TesteVericode\obj\Debug\net8.0\TesteVer.66BA17CF.Up2Date
 C:\TesteVericode\obj\Debug\net8.0\TesteVericode.dll
 C:\TesteVericode\obj\Debug\net8.0\refint\TesteVericode.dll

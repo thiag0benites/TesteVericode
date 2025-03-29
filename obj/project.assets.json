@@ -572,6 +572,22 @@
           "buildMultiTargeting/Reqnroll.Tools.MsBuild.Generation.props": {}
         }
       },
+      "Selenium.Support/4.30.0": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "4.30.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Selenium.WebDriver/4.30.0": {
         "type": "package",
         "compile": {
@@ -1922,6 +1938,20 @@
         "tasks/netstandard2.0/SpecFlow.Internal.Json.dll"
       ]
     },
+    "Selenium.Support/4.30.0": {
+      "sha512": "mpUvloTX1Nj7JdCZUSlLRIxcVBoPFAirLoqAEfO246f0nuxp8ibtEHGTBfRvJGReO0nbvqfOKyVW3fU6a/z7kw==",
+      "type": "package",
+      "path": "selenium.support/4.30.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/netstandard2.0/WebDriver.Support.dll",
+        "lib/netstandard2.0/WebDriver.Support.xml",
+        "selenium.support.4.30.0.nupkg.sha512",
+        "selenium.support.nuspec"
+      ]
+    },
     "Selenium.WebDriver/4.30.0": {
       "sha512": "POEESh6f408SNst9kT+mf4g9zVahIWXjo+/8qkjUt8dNRllD+am2Fdj30j5b54kpRIx5Nz2b08AREYvaOyQQMA==",
       "type": "package",
@@ -3269,6 +3299,7 @@
       "Reqnroll >= 2.2.1",
       "Reqnroll.NUnit >= 2.2.1",
       "Reqnroll.Tools.MsBuild.Generation >= 2.2.1",
+      "Selenium.Support >= 4.30.0",
       "Selenium.WebDriver >= 4.30.0",
       "WebDriverManager >= 2.17.5",
       "nunit >= 3.14.0"
@@ -3351,6 +3382,10 @@
           "Reqnroll.Tools.MsBuild.Generation": {
             "target": "Package",
             "version": "[2.2.1, )"
+          },
+          "Selenium.Support": {
+            "target": "Package",
+            "version": "[4.30.0, )"
           },
           "Selenium.WebDriver": {
             "target": "Package",

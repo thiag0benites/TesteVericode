@@ -1,4 +1,6 @@
 using System;
+using AngleSharp.Dom;
+using NUnit.Framework;
 using OpenQA.Selenium;
 using Reqnroll;
 using TesteVericode.PageObjects;
@@ -21,6 +23,10 @@ namespace TesteVericode.StepDefinitions
         public void GivenQueEuAcesseAPaginaTricentis()
         {
             contextoPage.AcessarSistema();
+            string urlEsperada = contextoPage.ObterUrlEsperada();
+            string urlAtual = contextoPage.ObterUrlAtual();
+
+            Assert.AreEqual(urlEsperada, urlAtual, $"Falha ao acessar a URL esperada. URL atual: {urlAtual}");
         }
     }
 }

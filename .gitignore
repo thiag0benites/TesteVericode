@@ -1,0 +1,10 @@
+﻿# Ignora a .vs folder
+.vs/
+
+# Ignora arquivos de configuracao do vs
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates

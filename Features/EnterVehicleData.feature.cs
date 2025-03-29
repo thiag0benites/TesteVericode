@@ -92,14 +92,14 @@ namespace TesteVericode.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Valida layout do formulario")]
+        [NUnit.Framework.DescriptionAttribute("Valida preenchimento dos campos e preenche formulario")]
         [NUnit.Framework.CategoryAttribute("test")]
-        public async System.Threading.Tasks.Task ValidaLayoutDoFormulario()
+        public async System.Threading.Tasks.Task ValidaPreenchimentoDosCamposEPreencheFormulario()
         {
             string[] tagsOfScenario = new string[] {
                     "test"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Valida layout do formulario", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Valida preenchimento dos campos e preenche formulario", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 11
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -113,25 +113,82 @@ this.ScenarioInitialize(scenarioInfo);
 #line 7
 await this.FeatureBackgroundAsync();
 #line hidden
-#line 12
- await testRunner.WhenAsync("acessar a pagina Tricentis", ((string)(null)), ((global::Reqnroll.Table)(null)), "Quando ");
-#line hidden
                 global::Reqnroll.Table table1 = new global::Reqnroll.Table(new string[] {
-                            "Make",
-                            "Model",
-                            "Cylinder Capacity [ccm]",
-                            "Engine Performance [kW]",
-                            "Date of Manufacture",
-                            "Number of Seats",
-                            "Right Hand Drive",
-                            "Fuel Type",
-                            "Payload [kg]",
-                            "Total Weight [kg]",
+                            "Campo",
+                            "Valor",
+                            "Aviso"});
+                table1.AddRow(new string[] {
+                            "Engine Performance",
+                            "xxx",
+                            "Must be a number between 1 and 2000"});
+                table1.AddRow(new string[] {
                             "List Price",
+                            "200",
+                            "Must be a number between 500 and 100000"});
+                table1.AddRow(new string[] {
+                            "Date of Manufacture",
+                            "2222222",
+                            "Must be a valid date"});
+                table1.AddRow(new string[] {
+                            "Annual Mileage",
+                            "ssddd",
+                            "Must be a number between 100 and 100000"});
+#line 12
+ await testRunner.WhenAsync("o [Campo] for preenchido com [Valor] invalido e exibido o [Aviso]", ((string)(null)), table1, "Quando ");
+#line hidden
+                global::Reqnroll.Table table2 = new global::Reqnroll.Table(new string[] {
+                            "Campo",
+                            "Valor"});
+                table2.AddRow(new string[] {
+                            "Make",
+                            "Honda"});
+                table2.AddRow(new string[] {
+                            "Model",
+                            "Scooter"});
+                table2.AddRow(new string[] {
+                            "Cylinder Capacity",
+                            "100"});
+                table2.AddRow(new string[] {
+                            "Engine Performance",
+                            "100"});
+                table2.AddRow(new string[] {
+                            "Date of Manufacture",
+                            "03/24/2025"});
+                table2.AddRow(new string[] {
+                            "Number of Seats",
+                            "1"});
+                table2.AddRow(new string[] {
+                            "Right Hand Drive",
+                            "Yes"});
+                table2.AddRow(new string[] {
+                            "Number of Seats Motorcycle",
+                            "1"});
+                table2.AddRow(new string[] {
+                            "Fuel Type",
+                            "Gas"});
+                table2.AddRow(new string[] {
+                            "Payload",
+                            "100"});
+                table2.AddRow(new string[] {
+                            "Total Weight",
+                            "400"});
+                table2.AddRow(new string[] {
+                            "List Price",
+                            "20000"});
+                table2.AddRow(new string[] {
                             "License Plate Number",
-                            "Annual Mileage [km]"});
-#line 13
- await testRunner.ThenAsync("o formulario Enter Vehicle Data deve ser exibido com os campos unicos", ((string)(null)), table1, "Entao ");
+                            "123456"});
+                table2.AddRow(new string[] {
+                            "Annual Mileage",
+                            "10000"});
+#line 18
+ await testRunner.AndAsync("preencho os campos com valores validos", ((string)(null)), table2, "E ");
+#line hidden
+#line 34
+ await testRunner.AndAsync("clico no botao Next", ((string)(null)), ((global::Reqnroll.Table)(null)), "E ");
+#line hidden
+#line 35
+ await testRunner.ThenAsync("deve ser apresentado o formulario \"Enter Insurant Data\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "Entao ");
 #line hidden
             }
             await this.ScenarioCleanupAsync();
