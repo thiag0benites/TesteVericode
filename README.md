@@ -26,3 +26,5 @@ Exemplo:
 ```
 allure open 190522_154000
 ```
+
+** Observação: ** O Allure Report deve estar instalado na máquina para a execução do comando. Foi realizado o commit de uma evidencia para efeito de avaliação.

@@ -8,26 +8,22 @@ namespace TesteVericode.PageObjects
 {
     public class EnterVehicleDataPage
     {
+        // Driver do Selenium WebDriver
         private readonly IWebDriver driver;
 
         public EnterVehicleDataPage(IWebDriver _driver)
         {
+            // Inicializa o driver
             driver = _driver;
         }
 
-        // Menu
-        public IWebElement menuEnterVehicleData => driver.FindElement(By.Id("idealsteps-nav"));
-        public IWebElement menuEnterInsurantData => driver.FindElement(By.Id("enterinsurantdata"));
-
-        // Campos
+        // Campos do formulário
         public IWebElement selectMake => driver.FindElement(By.Id("make"));
         public IWebElement selectModel => driver.FindElement(By.Id("model"));
         public IWebElement txtCylinderCapacity => driver.FindElement(By.Id("cylindercapacity"));
         public IWebElement txtEnginePerformance => driver.FindElement(By.Id("engineperformance"));
         public IWebElement txtDateOfManufacture => driver.FindElement(By.Id("dateofmanufacture"));
         public IWebElement selectNumberSeats => driver.FindElement(By.Id("numberofseats"));
-        public IWebElement radioRightHandDriveYes => driver.FindElement(By.XPath("//input[@id='righthanddriveyes']/parent::*"));
-        public IWebElement radioRightHandDriveNo => driver.FindElement(By.XPath("//input[@id='righthanddriveno']/parent::*"));
         public IWebElement selectNumberoSeatsMotorCycle => driver.FindElement(By.Id("numberofseatsmotorcycle"));
         public IWebElement selectFuelType => driver.FindElement(By.Id("fuel"));
         public IWebElement txtPayload => driver.FindElement(By.Id("payload"));
@@ -35,10 +31,17 @@ namespace TesteVericode.PageObjects
         public IWebElement txtListPrice => driver.FindElement(By.Id("listprice"));
         public IWebElement txtLicensePlateNumber => driver.FindElement(By.Id("licenseplatenumber"));
         public IWebElement txtAnnualMileage => driver.FindElement(By.Id("annualmileage"));
+
+        // Radio Buttons
+        public IWebElement radioRightHandDriveYes => driver.FindElement(By.XPath("//input[@id='righthanddriveyes']/parent::*"));
+        public IWebElement radioRightHandDriveNo => driver.FindElement(By.XPath("//input[@id='righthanddriveno']/parent::*"));
+
+        // Botão Next
         public IWebElement btnNext => driver.FindElement(By.Id("nextenterinsurantdata"));
 
         public void PreencherCampo(string campo, string valor)
         {
+            // Preenche os campos do formulário com base no nome do campo
             switch (campo)
             {
                 case "Make":
@@ -93,6 +96,7 @@ namespace TesteVericode.PageObjects
 
         public string ObterMensagemAviso(string campo)
         {
+            // Obtém a mensagem de aviso para um campo específico
             switch (campo)
             {
                 case "Make":
@@ -125,16 +129,6 @@ namespace TesteVericode.PageObjects
                     throw new Exception($"Campo {campo} não encontrado.");
             }
         }
-
-        public void ClicarProximo()
-        {
-            btnNext.Click();
-        }
-
-        public bool ValidaAcessoMenu(string itemMenu)
-        {
-            string fontWeight = menuEnterInsurantData.GetCssValue("font-weight");
-            return fontWeight == "bold" || fontWeight == "700";
-        }
     }
 }
+

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TesteVericode")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+53f7a4bf510be8c5501236523d1f7e96a5bebc61")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5e6a0bc784d8cb862763ea08f54495c38cf3fdfa")]
 [assembly: System.Reflection.AssemblyProductAttribute("TesteVericode")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TesteVericode")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

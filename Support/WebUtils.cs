@@ -52,5 +52,10 @@ namespace TesteVericode.Support
         {
             Thread.Sleep((segundos * 1000));
         }
+
+        public static void ClicarBotaoProximo(IWebElement element)
+        {
+            element.Click();
+        }
     }
 }
